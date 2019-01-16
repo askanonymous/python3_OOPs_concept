@@ -16,7 +16,12 @@ class Employee:
         else:
             print("The employee : {} has not achieved his target and lags behind by {} !".format(self.name,(5 - self.target)))
 
+    def changeEmployeeName(self, newname):
+        self.name = newname
 
 emp1 = Employee("Abhishek Singh", "Technology Analyst",10)
+emp1.employee_details()
+emp1.hasAchievedTarget()
+emp1.changeEmployeeName("Rockstar Singh")
 emp1.employee_details()
 emp1.hasAchievedTarget()
